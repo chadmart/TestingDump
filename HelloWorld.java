@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class HelloWorld {
 
-	boolean uniqueChars(String input){
+	static boolean uniqueChars(String input){
 		if(input.length() > 256)
 			return false;
 		
@@ -69,7 +69,6 @@ public class HelloWorld {
 		Arrays.sort(t);
 		return new String(t);
 	}
-	
 	static boolean permutationF(String a, String b){
 		if(b.length() != a.length()){
 			return false;
@@ -90,7 +89,6 @@ public class HelloWorld {
 		
 		return true;
 	}
-	
 	static char[] replaceString(char[] str){
 		
 		for(int i = 0; i < str.length; i++){
@@ -100,12 +98,56 @@ public class HelloWorld {
 		return str;
 		
 	}
+	static boolean isRotation(String s1, String s2){
+		return isSubstring(s1+s1, s2);
+	}
+	
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		reverse("chad");
-		if((isSubstring("waterbottlewaterbottle","erbottlewat")))
-			System.out.println(reverseRecursive("chady"));
+		
+		SinglyLinkedList list = new SinglyLinkedList(5);
+		list.print();
+		list = new SinglyLinkedList();
+		list.print();
+		list.insert(1);
+		list.print();
+		list.insert(2);
+		list.print();
+		list.insert(3);
+		list.insert(4);
+		list.print();
+		list.reverse();
+		list.print();
+		list.insert(5);
+		list.print();
+		list.removeMiddle();
+		list.print();
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
+		list.removeMiddle();
+		list.print();
+
 
 	}
 
 }
+
